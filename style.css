@@ -27,3 +27,14 @@ body {
     position: absolute;
     top: 10%;
 }
+
+.sizeinput {
+    display: none;
+    position: absolute;
+    width: 100px;
+    top: 15%;
+}
+
+.slidecontainer {
+    
+}
