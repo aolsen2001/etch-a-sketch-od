@@ -36,6 +36,9 @@ function createGrid(size) {
     }
 }
 
+/**
+ * Clear the current grid
+ */
 function clearGrid () {
     const tiles = gridContainer.children;
     for (var i = 0; i < tiles.length; ++i) {
@@ -74,6 +77,7 @@ const gridContainer = document.getElementById('grid-container');
 const eraserToggle = document.getElementById('eraserToggle');
 const clearButton = document.getElementById('clearButton');
 const slider = document.getElementById("sizeSlider");
+const colorPicker = document.getElementById('colorPicker');
 var sliderText = document.getElementById("sliderText");
 
 // set slider to default size of 16
@@ -82,10 +86,12 @@ sliderText.innerHTML = ` ${size} x ${size}`;
 
 createGrid(size);
 
-clearButton.addEventListener("click", () => {
-    clearGrid();
+// change color on selection within color picker
+colorPicker.addEventListener('change', (e) => {
+    color = e.target.value;
 })
 
+// toggle eraser on/off on button click
 var eraserOn = false;
 eraserToggle.addEventListener("click", () => {
     if (eraserOn === false) {
@@ -99,6 +105,10 @@ eraserToggle.addEventListener("click", () => {
     }
 })
 
+// clear grid on button click
+clearButton.addEventListener("click", () => {
+    clearGrid();
+})
 
 // update size based on slider
 slider.oninput = function () {

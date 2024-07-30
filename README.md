@@ -1,2 +1,4 @@
 # etch-a-sketch-od
-Etch-A-Sketch project from the Odin Project Foundations course
+A simple Etch-A-Sketch program created with HTML, CSS and JavaScript.
+
+Inspired by the Odin Project
