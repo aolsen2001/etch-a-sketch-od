@@ -9,11 +9,24 @@
 </head>
 
 <body>
-    <button class="sizebutton" id="resize">Change Size</button>
-    <div><input type="range" min="1" max="100" value="16" class="slider" id="sizeSlider"></div>
-    <div id="sliderText">num</div>
-    <div class="container" id="grid-container"></div>
+    <header>
+        <h1>Etch-A-Sketch</h1>
+    </header>
+    <div class="sitecontainer">
+        <div class="sidemenu">
+            <div><input type="color"></div>
+            <div><button type = "button" id="eraserToggle">Eraser Off</button></div>
+            <div><button type = "button" id="clearButton">Clear Grid</div>
+            <div><input type="range" min="1" max="100" value="16" class="slider" id="sizeSlider"></div>
+            <div id="sliderText"></div>
+        </div>
+        <div class="gridcontainer" id="grid-container"></div>
+    </div>
+    <footer>
+        This is the footer
+    </footer>
     <script src="etchasketch.js"></script>
+    <!--Image source:https://dev.to/madsstoumann/colors-are-math-how-they-match-and-how-to-build-a-color-picker-4ei8 -->
 </body>
 
 </html>
